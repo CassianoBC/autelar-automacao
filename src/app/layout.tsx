@@ -1,3 +1,4 @@
+import WhatsButton from "@/components/WhatsButton";
 import "./globals.css";
 
 import { Metadata } from "next";
@@ -24,6 +25,8 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
+
+        <WhatsButton />
         {children}
       </body>
     </html>
