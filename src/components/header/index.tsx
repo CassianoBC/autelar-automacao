@@ -17,7 +17,7 @@ export default function Header() {
                         <li className="text-[#05245F] hover:text-[#2596be]">
                             <Link href="/servicos">Serviços</Link>
                         </li>
-                        <Link href="/pages/contato">
+                        <Link href="/contato">
                             <li className="bg-[#fe9325] hover:bg-[#f4c082] p-4 rounded-full cursor-pointer">Peça um orçamento</li>
                         </Link>
                     </ul>
