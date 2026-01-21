@@ -1,11 +1,6 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-
-
 export default function Contato() {
     return (
         <>
-            <Header />
             <section className="h-[75.5vh]">
                 <div className="flex flex-col items-center gap-8 mx-30 my-5">
                     <h1 className="text-4xl font-bold text-[#05245f]">Entre em contato</h1>
@@ -18,11 +13,10 @@ export default function Contato() {
                             <label htmlFor="file-upload" className="cursor-pointer">Anexar conta de luz:</label>
                             <input className="hidden" id="file-upload" type="file" placeholder="" accept=".pdf,.doc,.docx" />
                         </div>
-                        <button className="bg-[#05245f] text-white py-2 px-4 w-32 rounded cursor-pointer hover:bg-[#2596be]" type="submit">Enviar</button>
+                        <button className="bg-[#fe9325] text-white py-2 px-4 w-32 rounded cursor-pointer hover:bg-[#f4c082] transition-all duration-300" type="submit">Enviar</button>
                     </form>
                 </div>
             </section>
-            <Footer />
         </>
     )
 }
