@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <header className="flex items-center h-24 w-full bg-white sticky top-0 z-10 shadow-md">
             <div className="flex justify-between items-center w-full px-8 md:px-0 max-w-7xl mx-auto">
-                <Logo  />
+                <Logo width={240} height={49} />
                 <nav className="hidden md:block">
                     <ul className="gap-20 [&>*:last-child]:mr-0 flex items-center">
                         <li className="text-[#05245F] hover:text-[#2596be]">

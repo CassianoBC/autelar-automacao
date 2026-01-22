@@ -6,7 +6,7 @@ export default function WhatsButton() {
     return (
         <div className="flex fixed justify-center items-center bottom-8 right-8 z-10 cursor-pointer">
             <a href={NumeroWhats} target="_blank">
-                <Image className="" src="/whatsapp.png" alt="WhatsApp" width={64} height={64} />
+                <Image src="/whatsapp.png" alt="WhatsApp" width={64} height={64} />
             </a>
         </div>
     )
