@@ -1,5 +1,3 @@
-
-
 export default function Footer() {
     return (
         <footer className="text-start p-10 bg-[#05245f] text-white">
