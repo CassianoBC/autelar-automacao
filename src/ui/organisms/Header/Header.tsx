@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <header className="flex items-center h-24 w-full bg-white sticky top-0 z-10 shadow-md">
             <div className="flex justify-between items-center w-full px-8 md:px-0 max-w-7xl mx-auto">
-                <Logo  />
+                <Logo width={240} height={49} />
                 <nav className="hidden md:block">
                     <ul className="gap-20 [&>*:last-child]:mr-0 flex items-center">
                         <li className="text-[#05245F] hover:text-[#2596be]">
@@ -18,11 +18,7 @@ export default function Header() {
                             <Link href="/servicos">Serviços</Link>
                         </li>
                         <Link href="/contato">
-<<<<<<< HEAD:src/components/header/index.tsx
-                            <li className="bg-[#fe9325] hover:bg-[#f4c082] p-4 rounded-full cursor-pointer">Peça um orçamento</li>
-=======
                             <li className="bg-[#fe9325] hover:bg-[#f4c082] text-white transition-all duration-300 py-2.5 px-4 rounded-full cursor-pointer">Peça um orçamento</li>
->>>>>>> 87f8b34d98f8d496d056b5edfdb049eff214f286:src/ui/organisms/Header/Header.tsx
                         </Link>
                     </ul>
                 </nav>

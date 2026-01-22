@@ -1,20 +1,14 @@
+'use client'
+
+import Form from '@/ui/organisms/Form';
+
 export default function Contato() {
     return (
         <>
-            <section className="h-[75.5vh]">
-                <div className="flex flex-col items-center gap-8 mx-30 my-5">
+            <section className="flex h-[80vh] items-center justify-center">
+                <div className=" flex flex-col items-center gap-8 mx-30 my-5 w-full">
                     <h1 className="text-4xl font-bold text-[#05245f]">Entre em contato</h1>
-                    <form className="flex flex-col gap-8 max-w-2xl w-full [&>input]:border [&>input]:w-full [&>input]:py-2 [&>input]:px-4 [&>input]:outline-none [&>textarea]:outline-none [&>input]:rounded last:gap-4" >
-                        <input required type="text" placeholder="Nome:" />
-                        <input required type="email" placeholder="E-mail:" />
-                        <input required type="tel" placeholder="Telefone:" />
-                        <textarea required className="w-full h-36 px-4 py-2 border resize-none rounded" placeholder="Escreva sua mensagem:" cols={30} rows={10}></textarea>
-                        <div className="bg-[#05245f] hover:bg-[#2596be] text-white py-2 px-4 w-48 rounded">
-                            <label htmlFor="file-upload" className="cursor-pointer">Anexar conta de luz:</label>
-                            <input className="hidden" id="file-upload" type="file" placeholder="" accept=".pdf,.doc,.docx" />
-                        </div>
-                        <button className="bg-[#fe9325] text-white py-2 px-4 w-32 rounded cursor-pointer hover:bg-[#f4c082] transition-all duration-300" type="submit">Enviar</button>
-                    </form>
+                    <Form />
                 </div>
             </section>
         </>

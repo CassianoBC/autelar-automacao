@@ -3,16 +3,21 @@
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
-export default function Logo() {
+type logoProps = {
+  width: number
+  height: number
+}
+
+export default function Logo({ width, height }: logoProps) {
   const router = useRouter()
 
   const handleClick = () => {
-    router.push('/contato')
+    router.push('/')
   }
 
   return (
     <div onClick={handleClick} style={{ cursor: 'pointer' }}>
-      <Image priority width={240} height={49} src="/logo.png" alt="autelar-logo" />
+      <Image priority width={width} height={height} src="/logo_new.png" alt="autelar-logo" />
     </div>
   )
 }

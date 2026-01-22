@@ -1,4 +1,3 @@
-import WhatsButton from "@/ui/molecules/WhatsButton";
 import "./globals.css";
 
 import { Metadata } from "next";
