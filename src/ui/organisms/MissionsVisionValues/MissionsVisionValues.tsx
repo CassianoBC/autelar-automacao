@@ -1,14 +1,15 @@
+import ButtonContact from "@/ui/molecules/ButtonContact";
 import Image from "next/image";
 
 export default function MissionsVisionValues() {
     return (
         <div className="mx-auto text-[#05245f]">
-            <div className="flex flex-col items-center text-center md:col-span-2">
+            <div className="flex flex-col items-center text-center md:col-span-2 my-20">
                 <h3 className="text-2xl font-bold">Engenharia que transforma tecnologia em eficiência</h3>
                 <p className="text-lg max-w-3xl ">Criamos projetos personalizados, focados em eficiência, segurança e redução de custos, sempre alinhados às necessidades de cada cliente.</p>
             </div>
             <div className="bg-zinc-200">
-                <div className="mt-12 grid grid-cols-1 items-center md:grid-cols-3 gap-8 w-full mx-auto text-center place-items-center rounded-2xl p-10 max-w-7xl">
+                <div className="mt-12 grid grid-cols-1 items-center md:grid-cols-3 gap-8 w-full mx-auto text-center place-items-center rounded-2xl p-15 max-w-7xl">
                     <div className="flex flex-col max-w-75 w-full items-center p-6 text-center rounded shadow-2xl bg-white transition-all duration-300 hover:scale-105">
                         <Image src="/icons/engineering.png" alt="Engrenagem" width={64} height={64} />
                         <h4 className="font-bold">Missão</h4>
@@ -43,38 +44,43 @@ export default function MissionsVisionValues() {
                     </div>
                 </div>
             </div>
-            <div className="bg-[#05245f] text-white">
-                <div className="max-w-7xl mx-auto">
-                    <div className="grid grid-cols-1 items-center md:grid-cols-3 gap-8 w-full mx-auto text-center place-items-center rounded-2xl p-10 py-10 max-w-7xl">
-                        <div className="flex flex-col max-w-75 w-full items-center p-6 text-center rounded shadow-2xl bg-[#2596be] transition-all duration-300 hover:scale-105">
-                            <Image src="/icons/engineering.png" alt="Engrenagem" width={64} height={64} />
-                            <h4 className="font-bold">Missão</h4>
-                            <p>Proporcionar inteligência e eficiência por meio de soluções personalizadas em automação e energias renováveis</p>
+            <div>
+            </div>
+            <div className="bg-[#05245f] text-white py-15">
+                <div className="max-w-3xl flex flex-col mx-auto gap-15">
+                    <div className="flex flex-col items-start text-start">
+                        <div className="flex items-center gap-2 border-b-2">
+                            <Image src="/icons/recycle.svg" alt="Mão segurando planta" width={28} height={28} />
+                            <h2 className="text-2xl font-bold">Inovação sustentável</h2>
                         </div>
-                        <div className="flex flex-col max-w-75 w-full items-center p-6 text-center rounded shadow-2xl bg-[#2596be] transition-all duration-300 hover:scale-105">
-                            <Image src="/icons/engineering.png" alt="Engrenagem" width={64} height={64} />
-                            <h4 className="font-bold">Missão</h4>
-                            <p>Proporcionar inteligência e eficiência por meio de soluções personalizadas em automação e energias renováveis</p>
-                        </div>
-                        <div className="flex flex-col max-w-75 w-full items-center p-6 text-center rounded shadow-2xl bg-[#2596be] transition-all duration-300 hover:scale-105">
-                            <Image src="/icons/engineering.png" alt="Engrenagem" width={64} height={64} />
-                            <h4 className="font-bold">Missão</h4>
-                            <p>Proporcionar inteligência e eficiência por meio de soluções personalizadas em automação e energias renováveis</p>
-                        </div>
+                        <p className="text-lg">Buscar tecnologias modernas que gerem valor a longo prazo com responsabilidade ambiental.</p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl w-full mx-auto lg:gap-0 md:gap-8 px-30 place-items-center">
-                        <div className="flex flex-col max-w-75 w-full items-center p-6 text-center rounded shadow-2xl bg-[#2596be] transition-all duration-300 hover:scale-105">
-                            <Image src="/icons/engineering.png" alt="Engrenagem" width={64} height={64} />
-                            <h4 className="font-bold">Missão</h4>
-                            <p>Proporcionar inteligência e eficiência por meio de soluções personalizadas em automação e energias renováveis</p>
+                    <div className="flex flex-col items-start text-start">
+                        <div className="flex items-center gap-2 border-b-2">
+                            <Image src="/icons/user.svg" alt="Mão segurando planta" width={32} height={32} />
+                            <h2 className="text-2xl font-bold">Foco no cliente</h2>
                         </div>
-                        <div className="flex flex-col max-w-75 w-full items-center p-6 text-center rounded shadow-2xl bg-[#2596be] transition-all duration-300 hover:scale-105">
-                            <Image src="/icons/engineering.png" alt="Engrenagem" width={64} height={64} />
-                            <h4 className="font-bold">Missão</h4>
-                            <p>Proporcionar inteligência e eficiência por meio de soluções personalizadas em automação e energias renováveis</p>
+                        <p className="text-lg">Soluções sob medida que transformam desafios em resultados concretos.</p>
+                    </div>
+                    <div className="flex flex-col items-start text-start">
+                        <div className="flex items-center gap-2 border-b-2">
+                            <Image src="/icons/shield-checked.svg" alt="Mão segurando planta" width={28} height={28} />
+                            <h2 className="text-2xl font-bold">Integridade e transparência</h2>
                         </div>
+                        <p className="text-lg">Atuação ética e clara em todos os processos</p>
+                    </div>
+                    <div className="flex flex-col items-start text-start">
+                        <div className="flex items-center gap-2 border-b-2">
+                            <Image src="/icons/RPM.svg" alt="Mão segurando planta" width={32} height={32} />
+                            <h2 className="text-2xl font-bold">Eficiência</h2>
+                        </div>
+                        <p className="text-lg">otimização para máximo desempenho com menor consumo de recursos</p>
                     </div>
                 </div>
+            </div>
+            <div className="flex flex-col items-center text-center my-20 gap-5">
+                <p className="text-3xl">Pronto para transformar sua casa ou empresa com inteligência e eficiência?</p>
+                <ButtonContact value="Entre em contato" />
             </div>
         </div>
     )
