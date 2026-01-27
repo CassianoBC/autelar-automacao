@@ -6,7 +6,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "@/ui/atoms/Shadcn/carousel"
 import Image from "next/image"
 
 import Autoplay from "embla-carousel-autoplay"
@@ -19,12 +19,12 @@ export default function page() {
       </div>
       <div className="flex flex-col items-center ">
         <div className="text-[#05245f] my-16 text-center max-w-3xl">
-          <p className="text-lg">
+          <p className="text-lg mx-3">
             Na Autelar, cada projeto é uma prova do nosso compromisso com o rigor técnico e a inovação. Nosso portfólio reúne soluções personalizadas que transformaram a operação de empresas e o conforto de residências através da automação inteligente e da energia limpa. Navegue pelos nossos cases e veja como integramos tecnologia de ponta para otimizar processos, garantir segurança e, acima de tudo, gerar economia real para nossos clientes. Da concepção à implementação, entregamos eficiência que você pode medir.
           </p>
         </div>
         <div className="flex justify-center items-center my-10">
-          <Carousel className="w-full flex sm:max-w-2xl" plugins={[Autoplay({ delay: 3000 })]}>
+          <Carousel className="w-full flex max-w-52 sm:max-w-2xl" plugins={[Autoplay({ delay: 3000 })]}>
             <CarouselContent>
               {Array.from({ length: 7 }).map((_, index) => (
                 <CarouselItem key={index} className="flex items-center justify-center">

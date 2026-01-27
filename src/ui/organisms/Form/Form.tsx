@@ -9,7 +9,7 @@ export default function Form() {
     const [fileName, setFileName] = useState("");
 
     return (
-        <form action={emailSubmit} encType="multipart/form-data" method="post" className="flex flex-col gap-8 max-w-2xl w-full [&>input]:border [&>input]:w-full [&>input]:py-2 [&>input]:px-4 [&>input]:outline-none [&>textarea]:outline-none [&>input]:rounded last:gap-4" >
+        <form action={emailSubmit} encType="multipart/form-data" method="post" className="flex flex-col gap-8 max-w-2xl w-full [&>input]:border [&>input]:w-full [&>input]:py-2 [&>input]:px-4 [&>input]:sm:my-0 [&>input]:outline-none [&>textarea]:outline-none [&>input]:rounded last:gap-4" >
             <input required type="text" name="nome" placeholder="Nome:" />
             <input required type="email" name="email" placeholder="E-mail:" />
             <InputMask id="phone" mask="(__) _____-____" replacement={{ _: /\d/ }} name="telefone" placeholder="Telefone: ex (99) 99999-9999" />
