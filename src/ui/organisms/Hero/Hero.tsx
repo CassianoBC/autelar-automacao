@@ -4,15 +4,13 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="bg-[url('/hero.png')] bg-cover h-screen md:h-135 max-w-7xl bg-center relative before:absolute before:bg-[rgba(0,0,0,0.8)] before:inset-0 before:z-0 flex justify-start md:justify-center md:text-center px-12 items-center my-5 rounded-2xl before:rounded-2xl mx-4 md:mx-auto ">
-            <div className="z-2">
-                <Logo width={700} height={135} />
-                <p className="text-white text-3xl font-bold mb-4">Onde o seu lar encontra o futuro.</p>
-                <div className="flex gap-2 justify-start md:justify-center">
-                    <ButtonContact value="Entre em contato" />
-                    <Link href="/sobre" className=" border border-white text-white hover:bg-white hover:text-[#05245F] py-2 px-4 rounded-full cursor-pointer transition-all duration-300">Saiba mais</Link>
-                </div>
+        <div className="flex flex-col items-center justify-center gap-2 py-20">
+            <Logo width={640} height={360} />
+            <p className="text-[#05245f] font-bold sm:text-3xl">Onde seu lar encontra o futuro.</p>
+            <div className="flex gap-4 mt-6">
+                <ButtonContact value="Entre em contato" />
+                <Link href="/sobre" className="border border-[#05245f] text-[#05245F] hover:bg-[#05245f] hover:text-white py-2 px-4 rounded-full cursor-pointer transition-all duration-300">Saiba mais</Link>
             </div>
-        </section>
+        </div>
     )
 }
