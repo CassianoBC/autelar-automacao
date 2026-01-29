@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <div className="flex flex-col items-center justify-center gap-2 py-20">
+        <div className="flex flex-col items-center justify-center gap-2 py-20 pt-0">
             <Logo width={640} height={360} />
             <p className="text-[#05245f] font-bold sm:text-3xl">Onde seu lar encontra o futuro.</p>
             <div className="flex gap-4 mt-6">

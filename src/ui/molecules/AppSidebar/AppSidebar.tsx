@@ -10,41 +10,34 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from "@/ui/atoms/Shadcn/sidebar"
+import ButtonContact from "../ButtonContact"
 
 const items = [
     {
-        title: "Home",
-        url: "#",
+        title: "Inicio",
+        url: "/",
     },
     {
-        title: "Inbox",
-        url: "#",
+        title: "Sobre",
+        url: "/sobre",
     },
     {
-        title: "Calendar",
-        url: "#",
-    },
-    {
-        title: "Search",
-        url: "#",
-    },
-    {
-        title: "Settings",
-        url: "#",
+        title: "Serviços",
+        url: "/servicos",
     },
 ]
 
 
 export default function AppSidebar() {
     return (
-        <Sidebar side="right">
+        <Sidebar side="left">
             <SidebarContent>
                 <SidebarGroup>
-                    <SidebarGroupLabel>Application</SidebarGroupLabel>
+                    <SidebarGroupLabel className="mb-5">Menu</SidebarGroupLabel>
                     <SidebarGroupContent>
-                        <SidebarMenu>
+                        <SidebarMenu className="">
                             {items.map((item) => (
-                                <SidebarMenuItem key={item.title}>
+                                <SidebarMenuItem className="mb-5" key={item.title}>
                                     <SidebarMenuButton asChild>
                                         <a href={item.url}>
                                             <span>{item.title}</span>
@@ -53,6 +46,11 @@ export default function AppSidebar() {
                                 </SidebarMenuItem>
                             ))}
                         </SidebarMenu>
+                        <SidebarMenuItem>
+                            <SidebarMenuButton asChild>
+                                <ButtonContact value="Entre em Contato" />
+                            </SidebarMenuButton>
+                        </SidebarMenuItem>
                     </SidebarGroupContent>
                 </SidebarGroup>
             </SidebarContent>
