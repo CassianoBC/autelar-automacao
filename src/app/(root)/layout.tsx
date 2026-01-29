@@ -1,3 +1,6 @@
+import { SidebarProvider } from "@/ui/atoms/Shadcn/sidebar";
+
+import AppSidebar from "@/ui/molecules/AppSidebar/AppSidebar";
 import WhatsButton from "@/ui/molecules/WhatsButton";
 import Footer from "@/ui/organisms/Footer";
 import Header from "@/ui/organisms/Header";
@@ -9,10 +12,13 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <Header />
-      <WhatsButton />
-      {children}
-      <Footer />
+      <SidebarProvider defaultOpen={false} className="flex flex-col">
+        <Header />
+        <AppSidebar />
+        <WhatsButton />
+        {children}
+        <Footer />
+      </SidebarProvider>
     </>
   );
 }

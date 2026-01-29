@@ -4,7 +4,7 @@ import { useState } from "react";
 
 
 export default function Form() {
-    const emailSubmit = "https://formsubmit.co/cassianocosta12357@gmail.com"
+    const emailSubmit = "https://formsubmit.co/atendimento.autelar@gmail.com"
 
     const [fileName, setFileName] = useState("");
 
