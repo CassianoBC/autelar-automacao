@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function MissionsVisionValues() {
     return (
-        <div className="mx-auto text-[#05245f]">
+        <section id="about" className="mx-auto text-[#05245f]">
             <div className="flex flex-col items-center text-center md:col-span-2 my-20">
                 <h3 className="text-2xl md:text-3xl font-bold mb-3">Engenharia que transforma tecnologia em eficiência</h3>
                 <p className="text-lg max-w-3xl ">Criamos projetos personalizados, focados em eficiência, segurança e redução de custos, sempre alinhados às necessidades de cada cliente.</p>
@@ -82,6 +82,6 @@ export default function MissionsVisionValues() {
                 <p className="text-3xl mb-3">Pronto para transformar sua casa ou empresa com inteligência e eficiência?</p>
                 <ButtonContact value="Entre em contato" />
             </div>
-        </div>
+        </section>
     )
 }
