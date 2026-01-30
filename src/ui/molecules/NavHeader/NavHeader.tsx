@@ -11,7 +11,7 @@ export default function NavHeader() {
                     <Link href="/">Inicio</Link>
                 </li>
                 <li className="text-[#05245F] hover:text-[#2596be]">
-                    <Link href="/sobre">Sobre</Link>
+                    <Link href="#about">Sobre</Link>
                 </li>
                 <li className="text-[#05245F] hover:text-[#2596be]">
                     <Link href="/servicos">Serviços</Link>
