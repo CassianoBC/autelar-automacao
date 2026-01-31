@@ -13,8 +13,8 @@ export default function RootLayout({
   return (
     <>
       <SidebarProvider defaultOpen={false} className="flex flex-col">
-        <Header />
         <AppSidebar />
+        <Header />
         <WhatsButton />
         {children}
         <Footer />

@@ -19,18 +19,18 @@ const items = [
     },
     {
         title: "Sobre",
-        url: "/sobre",
+        url: "#about",
     },
     {
         title: "Serviços",
-        url: "/servicos",
+        url: "#services",
     },
 ]
 
 
 export default function AppSidebar() {
     return (
-        <Sidebar side="left">
+        <Sidebar className="absolute z-1000" side="left">
             <SidebarContent>
                 <SidebarGroup>
                     <SidebarGroupLabel className="mb-5">Menu</SidebarGroupLabel>
