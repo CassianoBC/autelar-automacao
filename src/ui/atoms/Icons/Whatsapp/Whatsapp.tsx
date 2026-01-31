@@ -1,6 +1,6 @@
 import type { JSX, SVGProps } from 'react'
 
-function Icon({
+function IconWhats({
   color = 'currentColor',
   width = 16,
   height = 16,
@@ -8,6 +8,7 @@ function Icon({
 }: SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg
+      className='hover:text-(--laranja)'
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 636.32 639.38"
       width={width}
@@ -24,4 +25,4 @@ function Icon({
   )
 }
 
-export default Icon
+export default IconWhats

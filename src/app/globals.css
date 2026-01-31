@@ -77,6 +77,8 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   --azul: #05245f;
+  --laranja: #fe9325;
+  --laranja-claro: #f4c082;
 }
 
 .dark {

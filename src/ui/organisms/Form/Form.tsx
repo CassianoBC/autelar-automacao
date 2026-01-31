@@ -16,7 +16,7 @@ export default function Form() {
             <textarea required className="w-full h-40 px-4 py-2 border resize-none rounded" name="mensagem" placeholder="Escreva sua mensagem:" cols={30} rows={10}></textarea>
             <div className="w-full flex flex-col gap-1">
                 <p className="text-sm">Clique abaixo para anexar sua conta de luz:</p>
-                <label htmlFor="file-upload" className="cursor-pointer w-full text-[#05245f] hover:bg-[#2596be] border border-[#05245f] py-2 px-4 rounded ">Anexar: {fileName}</label>
+                <label htmlFor="file-upload" className="cursor-pointer w-full text-(--azul) hover:bg-[#2596be] border border-(--azul) py-2 px-4 rounded ">Anexar: {fileName}</label>
                 <input className="hidden" id="file-upload" type="file" name="document" accept=".pdf,.doc,.docx, .png, .jpg, .jpeg" onChange={(e) => setFileName(e.target.files ? e.target.files[0].name : "")} />
             </div>
             <button className="bg-[#fe9325] hover:bg-[#f4c082] transition-all duration-300 text-white py-2 px-4 w-32 rounded cursor-pointer" type="submit">Enviar</button>

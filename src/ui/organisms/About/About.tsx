@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function MissionsVisionValues() {
     return (
-        <div className="max-w-7xl mx-auto py-16 grid grid-cols-1 md:grid-cols-2 place-items-center gap-8 justify-between items-center text-[#05245f]">
+        <div className="max-w-7xl mx-auto py-16 grid grid-cols-1 md:grid-cols-2 place-items-center gap-8 justify-between items-center text-(--azul)">
             <div>
                 <h2 className="text-2xl font-bold text-center mb-2">Quem somos</h2>
                 <p className="text-lg text-center mx-4 ">

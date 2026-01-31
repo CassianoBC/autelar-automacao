@@ -3,14 +3,14 @@ import Image from "next/image";
 
 export default function MissionsVisionValues() {
     return (
-        <section id="about" className="mx-auto text-[#05245f]">
+        <section id="about" className="mx-auto text-(--azul)">
             <div className="flex flex-col items-center text-center md:col-span-2 my-20">
                 <h3 className="text-2xl md:text-3xl font-bold mb-3">Engenharia que transforma tecnologia em eficiência</h3>
                 <p className="text-lg max-w-3xl ">Criamos projetos personalizados, focados em eficiência, segurança e redução de custos, sempre alinhados às necessidades de cada cliente.</p>
             </div>
             <div className="bg-zinc-200">
                 <div className="mt-12 grid grid-cols-1 items-center md:grid-cols-3 gap-8 w-full mx-auto text-center place-items-center rounded-2xl p-15 max-w-7xl">
-                    <div className="flex flex-col max-w-75  items-center p-6 text-center rounded shadow-2xl bg-white transition-all duration-300 hover:scale-105">
+                    <div className="flex flex-col max-w-75 max-h-70 items-center p-6 text-center rounded shadow-2xl bg-white transition-all duration-300 hover:scale-105">
                         <Image src="/icons/engineering.png" alt="Engrenagem" width={64} height={64} />
                         <h4 className="font-bold">Missão</h4>
                         <p>Proporcionar inteligência e eficiência por meio de soluções personalizadas em automação e energias renováveis</p>
@@ -46,7 +46,7 @@ export default function MissionsVisionValues() {
             </div>
             <div>
             </div>
-            <div className="bg-[#05245f] text-white py-15">
+            <div className="bg-(--azul) text-white py-15">
                 <div className="max-w-3xl flex flex-col mx-auto gap-15 px-5">
                     <div className="flex flex-col items-start text-start">
                         <div className="flex items-center gap-2 border-b-2">
