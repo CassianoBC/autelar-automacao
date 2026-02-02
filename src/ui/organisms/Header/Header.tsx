@@ -4,28 +4,21 @@ import Logo from "@/ui/atoms/Logo";
 import NavHeader from "@/ui/molecules/NavHeader";
 
 import { useEffect, useState } from 'react'
-import { usePathname } from "next/navigation";
 import { SidebarTrigger } from "@/ui/atoms/Shadcn/sidebar";
 
 export default function Header() {
     const [scrolled, setScrolled] = useState(false);
 
-    const pathname = usePathname();
-    const isHomePage = pathname === '/';
-
-
     useEffect(() => {
-        if (!isHomePage) return;
-
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
         }
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, [isHomePage]);
+    }, []);
 
-    const logoVisible = !isHomePage || scrolled;
+    const logoVisible = scrolled;
 
 
     return (
