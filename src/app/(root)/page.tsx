@@ -36,7 +36,8 @@ export default function Home() {
           </section>
           <section id="contact" className="scroll-mt-24 relative z-1">
             <TitleSection>Fale Conosco</TitleSection>
-            <div className="lg:min-h-[80vh] flex items-center justify-center sm:mx-30 mx-5 my-25">
+            <div className="lg:min-h-[80vh] flex flex-col items-center justify-center sm:mx-30 mx-5 my-25">
+              <h2 className="mb-10 text-(--azul) font-bold text-3xl">Entre em contato</h2>
               <Form />
             </div>
           </section>
