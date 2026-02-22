@@ -22,7 +22,7 @@ export default function Header() {
 
 
     return (
-        <header className={logoVisible ? 'opacity-100 transition-opacity flex items-center h-24 w-full bg-white sticky top-0 left-0 z-10 shadow-md' : 'opacity-0'}>
+        <header className={logoVisible ? 'opacity-100 transition-opacity duration-500 ease-initial flex items-center h-24 w-full bg-white sticky top-0 left-0 z-10 shadow-md' : 'opacity-0 transition-opacity duration-300 ease-initial'}>
             <div className="flex justify-between items-center w-full px-8 md:px-0 max-w-7xl mx-auto">
                 <div>
                     <Logo width={240} height={49} />
