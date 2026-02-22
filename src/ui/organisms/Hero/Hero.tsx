@@ -9,7 +9,7 @@ export default function Hero() {
             <p className="text-(--azul) font-bold sm:text-3xl">Onde seu lar encontra o futuro.</p>
             <div className="flex gap-4 mt-6">
                 <ButtonContact value="Entre em contato" />
-                <Link href="#sobre" className="border border-(--azul) text-(--azul) hover:bg-(--azul) hover:text-white py-2 px-4 text-xs lg:text-lg rounded-full cursor-pointer transition-all duration-300">Saiba mais</Link>
+                <Link href="#about" className="border border-(--azul) text-(--azul) hover:bg-(--azul) hover:text-white py-2 px-4 text-xs lg:text-lg rounded-full cursor-pointer transition-all duration-300">Saiba mais</Link>
             </div>
         </div>
     )
